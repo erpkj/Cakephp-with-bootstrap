@@ -6,7 +6,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</a>
-			<a class="brand" target="_blank" href="http://twitter.github.com/bootstrap/"><?php echo __('CakeStrap'); ?></a>
+			<a class="brand" target="_blank" href="github.com/pankajkumarjha2010"><?php echo __('Cakephp with Bootstrap'); ?></a>
 			<div class="nav-collapse">
 				<ul class="nav">
 					<?php //Fill me with your sweet, sweet menu items. ?>
