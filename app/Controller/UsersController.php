@@ -105,6 +105,7 @@ class UsersController extends AppController {
      * @uses To login as a Admin user
      */
     public function login($f = null) {
+	$this->set('title_for_layout', 'Login');
 	if ($this->request->is('post')) {
 	    $ff = false;
 	    if (!empty($this->request->params['named']['f'])) {
@@ -127,7 +128,6 @@ class UsersController extends AppController {
 		    }
 
 		    $this->redirect(array('controller' => 'users', 'action' => 'dashboard', 'admin' => true));
-		    // redirect condition $this->_checkAndRedirect();        
 		} else {
 
 		    $this->Session->setFlash(__('Email or Password is incorrect'), 'default');
@@ -136,6 +136,19 @@ class UsersController extends AppController {
 	}
     }
 
+    
+    /**
+     * admin_logout method
+     * @copyright (c) 2013
+     * @author Pankaj Kumar Jha <pankajkumarjha@xyz.com>
+     * @uses To logout form admin
+     */
+    
+    public function admin_logout() {
+	$this->redirect($this->Auth->logout());
+    } 
+    
+    
     /**
      * register method
      * @copyright (c) 2013
@@ -143,6 +156,7 @@ class UsersController extends AppController {
      * @uses To register user
      */
     public function register() {
+	$this->set('title_for_layout', 'Registration');
 	if ($this->request->is('post')) {
 	    pr($this->User->validationErrors);
 	    $this->User->create();
@@ -153,6 +167,16 @@ class UsersController extends AppController {
 		$this->Session->setFlash(__('The user could not be saved. Please, try again.'), 'flash/error');
 	    }
 	}
+    }
+
+    /**
+     * admin_dashboard method
+     * @copyright (c) 2013
+     * @author Pankaj Kumar Jha <pankajkumarjha@xyz.com>
+     * @uses Dashboard of admin
+     */
+    public function admin_dashboard() {
+	$this->set('title_for_layout', 'Dashboard');
     }
 
 }
