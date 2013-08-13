@@ -112,15 +112,9 @@ class UsersController extends AppController {
 		$ff = base64_decode($this->request->params['named']['f']);
 	    }
 	    $this->User->set($this->request->data['User']);
-	    unset($this->User->validate['email']['isUnique']);
-	    unset($this->User->validate['email']['between']);
+	    unset($this->User->validate['username']['isUnique']);
 	    if ($this->User->validates()) {
 		if ($this->Auth->login()) {
-		    if ($this->request->data['User']['auto_login'] == true) {
-			$this->AutoLogin->write($this->request->data['User']['email'], $this->request->data['User']['password']);
-		    } else {
-			$this->AutoLogin->delete();
-		    }
 		    /* Redirect user accordingly based on account status */
 		    $AccountStatus = $this->Auth->user('status');
 		    if (!empty($ff)) {
