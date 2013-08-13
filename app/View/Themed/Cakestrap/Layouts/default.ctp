@@ -24,7 +24,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<head>
 		<?php echo $this->Html->charset(); ?>
 		<title>
-			<?php echo $cakeDescription ?>:
+			<?php //echo $cakeDescription ?>
 			<?php echo $title_for_layout; ?>
 		</title>
 		<?php
@@ -69,7 +69,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		<div class="container">
 			<div class="well">
 				<small>
-					<?php echo $this->element('sql_dump'); ?>
+					<?php // echo $this->element('sql_dump'); ?>
 				</small>
 			</div>
 		</div><!-- .container -->
