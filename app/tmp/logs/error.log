@@ -1,0 +1,50 @@
+2013-08-13 13:30:19 Error: Fatal Error (1): Class 'AppHelper' not found in [/var/www/cake_with_bootstrap/lib/Cake/View/Helper/NumberHelper.php, line 36]
+2013-08-13 13:30:19 Error: [FatalErrorException] Class 'AppHelper' not found
+Request URL: /cake_with_bootstrap/
+Stack Trace:
+#0 /var/www/cake_with_bootstrap/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'AppHelpe...', '/var/www/cake_w...', 36)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AppHelpe...', '/var/www/cake_w...', 36, Array)
+#2 /var/www/cake_with_bootstrap/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'AppHelpe...', '/var/www/cake_w...', 36, Array)
+#3 /var/www/cake_with_bootstrap/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-08-13 14:34:30 Error: Fatal Error (1): Class 'AppHelper' not found in [/var/www/cake_with_bootstrap/lib/Cake/View/Helper/NumberHelper.php, line 36]
+2013-08-13 14:34:30 Error: [FatalErrorException] Class 'AppHelper' not found
+Request URL: /cake_with_bootstrap/
+Stack Trace:
+#0 /var/www/cake_with_bootstrap/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'AppHelpe...', '/var/www/cake_w...', 36)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AppHelpe...', '/var/www/cake_w...', 36, Array)
+#2 /var/www/cake_with_bootstrap/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'AppHelpe...', '/var/www/cake_w...', 36, Array)
+#3 /var/www/cake_with_bootstrap/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-08-13 14:34:32 Error: Fatal Error (1): Class 'AppHelper' not found in [/var/www/cake_with_bootstrap/lib/Cake/View/Helper/NumberHelper.php, line 36]
+2013-08-13 14:34:32 Error: [FatalErrorException] Class 'AppHelper' not found
+Request URL: /cake_with_bootstrap/
+Stack Trace:
+#0 /var/www/cake_with_bootstrap/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'AppHelpe...', '/var/www/cake_w...', 36)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AppHelpe...', '/var/www/cake_w...', 36, Array)
+#2 /var/www/cake_with_bootstrap/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'AppHelpe...', '/var/www/cake_w...', 36, Array)
+#3 /var/www/cake_with_bootstrap/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-08-13 14:42:29 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/var/www/cake_with_bootstrap/app/Controller/UsersController.php, line 44]
+2013-08-13 14:42:29 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /cake_with_bootstrap/users/add
+Stack Trace:
+#0 /var/www/cake_with_bootstrap/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/cake_w...', 44)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/cake_w...', 44, Array)
+#2 /var/www/cake_with_bootstrap/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/cake_w...', 44, Array)
+#3 /var/www/cake_with_bootstrap/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-08-13 14:43:48 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [/var/www/cake_with_bootstrap/app/Controller/AppController.php, line 37]
+2013-08-13 14:43:48 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /cake_with_bootstrap/users/add
+Stack Trace:
+#0 /var/www/cake_with_bootstrap/lib/Cake/Error/ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cake_w...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cake_w...', 37, Array)
+#2 /var/www/cake_with_bootstrap/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cake_w...', 37, Array)
+#3 /var/www/cake_with_bootstrap/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
