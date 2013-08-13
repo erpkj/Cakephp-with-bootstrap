@@ -152,7 +152,6 @@ class UsersController extends AppController {
     public function register() {
 	$this->set('title_for_layout', 'Registration');
 	if ($this->request->is('post')) {
-	    pr($this->User->validationErrors);
 	    $this->User->create();
 	    if ($this->User->save($this->request->data)) {
 		$this->Session->setFlash(__('The user has been saved'), 'flash/success');
