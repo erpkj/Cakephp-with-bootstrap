@@ -34,9 +34,29 @@
 			<?php echo h($user['User']['name']); ?>
 			&nbsp;
 		</td>
+</tr><tr>		<td><strong><?php echo __('Email'); ?></strong></td>
+		<td>
+			<?php echo h($user['User']['email']); ?>
+			&nbsp;
+		</td>
 </tr><tr>		<td><strong><?php echo __('Phone'); ?></strong></td>
 		<td>
 			<?php echo h($user['User']['phone']); ?>
+			&nbsp;
+		</td>
+</tr><tr>		<td><strong><?php echo __('Username'); ?></strong></td>
+		<td>
+			<?php echo h($user['User']['username']); ?>
+			&nbsp;
+		</td>
+</tr><tr>		<td><strong><?php echo __('Password'); ?></strong></td>
+		<td>
+			<?php echo h($user['User']['password']); ?>
+			&nbsp;
+		</td>
+</tr><tr>		<td><strong><?php echo __('Status'); ?></strong></td>
+		<td>
+			<?php echo h($user['User']['status']); ?>
 			&nbsp;
 		</td>
 </tr><tr>		<td><strong><?php echo __('Created'); ?></strong></td>

@@ -36,9 +36,37 @@
 </div><!-- .control-group -->
 
 <div class="control-group">
+	<?php echo $this->Form->label('email', 'email', array('class' => 'control-label'));?>
+	<div class="controls">
+		<?php echo $this->Form->input('email', array('class' => 'span12')); ?>
+	</div><!-- .controls -->
+</div><!-- .control-group -->
+
+<div class="control-group">
 	<?php echo $this->Form->label('phone', 'phone', array('class' => 'control-label'));?>
 	<div class="controls">
 		<?php echo $this->Form->input('phone', array('class' => 'span12')); ?>
+	</div><!-- .controls -->
+</div><!-- .control-group -->
+
+<div class="control-group">
+	<?php echo $this->Form->label('username', 'username', array('class' => 'control-label'));?>
+	<div class="controls">
+		<?php echo $this->Form->input('username', array('class' => 'span12')); ?>
+	</div><!-- .controls -->
+</div><!-- .control-group -->
+
+<div class="control-group">
+	<?php echo $this->Form->label('password', 'password', array('class' => 'control-label'));?>
+	<div class="controls">
+		<?php echo $this->Form->input('password', array('class' => 'span12')); ?>
+	</div><!-- .controls -->
+</div><!-- .control-group -->
+
+<div class="control-group">
+	<?php echo $this->Form->label('status', 'status', array('class' => 'control-label'));?>
+	<div class="controls">
+		<?php echo $this->Form->input('status', array('class' => 'span12')); ?>
 	</div><!-- .controls -->
 </div><!-- .control-group -->
 
