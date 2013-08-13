@@ -17,11 +17,15 @@
 		<div class="users form">
 		
 			
-				<fieldset>
-					<h2><?php echo __('Welcome Administrator'); ?></h2>
-
-
-				</fieldset>
+				<div class="hero-unit">
+  <h1>Welcome <?php echo $this->Auth->user('name'); ?></h1>
+  <p>Successfully Logged in</p>
+  <p>
+    <a class="btn btn-primary btn-large">
+    Thank You
+    </a>
+  </p>
+</div>
 			
 		</div>
 			
